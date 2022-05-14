@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title> Tourism in Egypt.. </title>
+  <link rel="stylesheet" href="./css/Normalize.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h2>Pinko</h2>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Museums">Museums</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Pricing">Pricing</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Setting Box -->
+<div class="setting-box">
+  <div class="toggle-settings">
+    <i class="fa fa-gear"></i>
+  </div>
+  <div class="setting-container">
+    <div class="option-box">
+      <h4 class="h4">Colors</h4>
+      <ul class="changing-color">
+        <li data-color="#202020"></li>
+        <li class="active" data-color="#fff"></li>
+        <li data-color="#9d6c47"></li>
+        <li data-color="#582828"></li>
+      </ul>
+    </div>
+    <div class="option-box">
+      <h4>Background Option</h4>
+    <div class="random-background">
+      <span class="yes active" data-background="yes">Yes</span>
+      <span class="no" data-background="no">No</span>
+    </div>
+    </div>
+    <div class="links" id="links">
+      <a onclick="navOpen()">Log In</a>
+      <a onclick="test()">sign up</a>
+      <a onclick="siteMap()">Site Map</a>
+    </div>
+            <!-- Start Mega menu Create  -->
+            <div class="mega" id="mega">
+              <a class="closebtn" onclick="cloo()">&times;</a>
+              <div class="header">
+                  <h2>
+                    Create Account
+                  </h2>
+              </div>
+              <form class="form" id="form">
+                  <div class="from-control">
+                      <label>First name</label>
+                      <input type="username" placeholder="Enter Your First name" id="username">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <small>Error message</small>
+                  </div>
+                  <div class="from-control">
+                      <label>Last name</label>
+                      <input type="username" placeholder="Enter Your Last name" id="username">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <small>Error message</small>
+                  </div>
+                  <div class="from-control">
+                      <label>Email</label>
+                      <input type="email" placeholder="@gmail.com" id="email">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <small>Error message</small>
+                  </div>
+                  <div class="from-control">
+                      <label>Password</label>
+                      <input type="password" placeholder="Enter Password" id="password">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <small>Error message</small>
+                  </div>
+                  <button>Done</button>
+              </form>
+          </div>
+            <!-- End Mega menu Create -->
+
+            <!-- Start Mega menu Login  -->
+            <div class="navOpen" id="nav">
+              <a class="closebtn" onclick="navClose()">&times;</a>
+              <div class="header">
+                  <h2>
+                    Log In
+                  </h2>
+              </div>
+              <form class="form" id="form">
+                  <div class="from-control">
+                      <label>Email</label>
+                      <input type="email" placeholder="@gmail.com" id="email">
+                  </div>
+                  <div class="from-control">
+                      <label>Password</label>
+                      <input type="password" placeholder="Enter Password" id="password">
+                  </div>
+                  <button>Done</button>
+              </form>
+          </div>
+            <!-- End Mega menu Login  -->
+
+            <!-- Start Mega menu Site Map -->
+            <div class="site" id="sitemap">
+              <a class="closebtn" onclick="closeMap()">&times;</a>
+              <div class="header">
+                  <h2>
+                    Site Map
+                  </h2>
+              </div>
+              <div class="map">
+                <a href="#Home">HOME</a>
+                <a href="#About">ABOUT</a>
+                <a href="#Museums">MUSEUMS</a>
+                <a href="#Services">SERVICES</a>
+                <a href="#Pricing">PRICING</a>
+                <a href="#Contact">CONTACT</a>
+              </div>
+            </div>
+            <!-- End Mega menu Site Map  -->
+  </div>
+</div>
+  <!-- End Setting Box -->
+  <!-- start landing -->
+  <div class="landing" id="Home">
+    <div class="overlay"></div>
+      <div class="text">
+        <div class="content">
+          <h2>Welcome to PINKO <br> <span>visit the monuments in Egypt..</span> </h2>
+          <p>
+            Here at PINKO,<br> you can visit the ancient temples in Egypt in a safe way,
+            and we will provide you with the best hotels and restaurants at the highest level.
+          </p>
+        </div>
+          <div href="#Pricing" class="button">
+            <a href="#Pricing">Book now</a>
+          </div>
+        <div class="social">
+          <a href="#" class="facebook"> 
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="pinterest">
+            <i class="fa-brands fa-pinterest"></i> 
+          </a>
+          <a href="#" class="twitter">
+            <i  class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+    </div>
+    <a href="#About" class="icon">
+      <i class="fas fa-angle-double-down fa-2x"></i>
+    </a>
+  </div>
+  <!-- End landing -->
+  <!-- start About -->
+  <div class="about" id="About">
+    <h2 class="h2 reveal">About</h2>
+    <div class="container">
+      <div class="box reveal">
+      <div class="imag">
+        <img src="./imgs/About1.jpg" alt="">
+      </div>
+      <div class="content">
+        <span>Info About</span>
+        <h3>EGYPTIAN Civilization</h3>  
+        <p>Ancient Egyptian history spans over a number of periods.
+          The most prominent features of the ancient Egyptian kingdom were the construction of the Giza pyramids during the era of the Fourth Dynasty,
+          where the Great Pyramid of Khufu was, and the other two pyramids were from his son Khafri and his grandson Menkaure..
+        </p>
+        <a class="info" href="#">Read More</a>
+      </div>
+      </div>
+      <div class="boxx reveal">
+      <div class="content">
+        <span>Info About</span>
+        <h3>Restaurants and hotels</h3>
+        <p>Egypt's guide to restaurants and various fixed tourist hotels, so search in terms of
+        The quality of our restaurants and hotels..
+        </p>
+        <a class="info" href="#">Read More</a>
+      </div>
+      <div class="imag">
+        <img src="./imgs/About2.jpg" alt="">
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About -->
+  <!-- Start Section -->
+<div class="museumss" id="Museums">
+  <h2 class="h22">Museums</h2>
+<div class="museums">
+  <div class="overlay"></div>
+  <div class="slider">
+    <div class="slides">
+            <!-- Start radio  -->
+        <input type="radio"  name="radio-btn" id="radio1">
+        <input type="radio"  name="radio-btn" id="radio2">
+        <input type="radio"  name="radio-btn" id="radio3">
+        <input type="radio"  name="radio-btn" id="radio4">
+        <input type="radio"  name="radio-btn" id="radio5">
+            <!-- End radio -->
+            <!-- Start imags -->
+        <div class="slide first">
+            <img src="./imgs/Museums (5).jpg" alt="">
+        </div> 
+        <div class="slide">
+            <img src="./imgs/Museums (2).jpg" alt="">
+        </div> 
+        <div class="slide">
+            <img src="./imgs/Museums (3).jpg" alt="">
+        </div> 
+        <div class="slide">
+            <img src="./imgs/Museums (4).jpg" alt="">
+        </div> 
+        <div class="slide">
+            <img src="./imgs/Museums (1).jpg" alt="">
+        </div> 
+            <!-- End imags -->
+            <!-- Start Nav -->
+        <div class="nav">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+        </div>
+            <!-- End Nav -->
+    </div>
+    <!-- Start manual -->
+    <div class="manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+    </div>
+    <!-- End manual -->
+  </div>
+</div>
+</div>
+<!-- End Section -->
+  <!-- start Services -->
+  <div class="services" id="Services">
+    <h2 class="h2 reveal">Services</h2>
+    <div class="container reveal">
+      <div class="box-toristt">
+      <div class="imag">
+        <img src="./imgs/Eloqsr (1).jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>Luxor</h3>
+        <p>
+          Luxor Governorate, or as it is known in the Pyramids Governorate, is one of the most important governorates of Egypt since the era of the Pharaohs
+        </p>
+      </div>
+      <div class="info">
+        <a href="#">know more</a>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+    </div>
+    <div class="box-toristt">
+      <div class="imag">
+        <img src="./imgs/Elqahira (1).jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>Giza</h3>
+        <p>Giza Governorate, or as it is known in the Pyramids Governorate,
+          is one of the most important governorates of Egypt since the era of the Pharaohs
+        </p>
+      </div>
+      <div class="info">
+      <a href="#">know more</a>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+    </div>
+      <div class="box-toristt">
+      <div class="imag">
+        <img src="./imgs/Eloqsr (3).jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>Aswan</h3>
+        <p>
+          Aswan Governorate, or as it is known in the Pyramids Governorate, is one of the most important governorates of Egypt since the era of the Pharaohs
+        </p>
+      </div>
+      <div class="info">
+        <a href="#">know more</a>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          </div>
+      </div>
+    </div>
+      <div class="box-toristt">
+      <div class="imag">
+        <img src="./imgs/Fnadiq (2).jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>waterfalls hotel</h3>
+        <p>waterfalls hotel, or as it is known in the Pyramids Governorate, is one of the most important governorates of Egypt since the era of the Pharaohs</p>
+      </div>
+      <div class="info">
+      <a href="#">know more</a>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+    </div>
+      <div class="box-toristt">
+      <div class="imag">
+        <img src="./imgs/Fnadiq (3).jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>Resturant</h3>
+        <p>Resturant, or as it is known in the Pyramids Governorate, is one of the most important governorates of Egypt since the era of the Pharaohs</p>
+      </div>
+      <div class="info">
+      <a href="#">know more</a>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+    </div>
+      <div class="box-toristt">
+      <div class="imag">
+        <img src="./imgs/Fnadiq (5).jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>Hotel</h3>
+        <p>Hotel, or as it is known in the Pyramids Governorate, is one of the most important governorates of Egypt since the era of the Pharaohs</p>
+      </div>
+      <div class="info">
+      <a href="#">know more</a>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End Services -->
+  <!-- Start Quotation -->
+  <div class="quotation">
+    <div class="overlay"></div>
+      <div class="content">
+        <h3>
+          Prices And Contact Section
+        </h3>
+      </div>
+  </div>
+  <!-- End Quotation -->
+  <!-- Start Pricing -->
+  <div class="pricing" id="Pricing">
+    <div class="overlay" id="over"></div>
+    <div class="container reveal">
+      <div class="h2">
+        <h2>Pricing</h2>
+      </div>
+      <div class="p">
+        <p>
+          Book with us and we will guarantee you the best hotel, restaurant<br> and the best tourist areas in Egypt
+        </p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <div class="head">
+            <h3>Basic</h3>
+            <span>20</span>
+          </div>
+          <ul>
+            <li>Feature No 1</li>
+            <li>Extra Feature</li>
+            <li>Extra Feature No 2</li>
+            <li>Feature</li>
+          </ul>
+          <div id="main" class="foot">
+            <a onclick="openNav()">Book now</a>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="head">
+            <h3>Premium</h3>
+            <span>40</span>
+          </div>
+          <ul>
+            <li>Feature No 1</li>
+            <li>Extra Feature</li>
+            <li>Extra Feature No 2</li>
+            <li>Feature</li>
+          </ul>
+          <div id="main" class="foot">
+            <a onclick="openNav()">Book now</a>
+          </div>
+        </div>
+        <!-- Start Book Now  -->
+        <div id="mysidenav" class="sidenav">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="mega">
+            <div class="header">
+              <h2>
+                your data
+              </h2>
+          </div>
+          <form class="form" id="form">
+            <div class="from-control">
+                <label>Destination / Place Name</label>
+                <input type="username" placeholder="ُPlace Name" id="username">
+            </div>
+            <div class="from-control">
+                <label>National ID</label>
+                <input type="text" placeholder="National ID">
+            </div>
+            <div class="from-control">
+              <label for="phone">phone number</label>
+              <input type="tel" placeholder="phone number" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            <div class="from-control">
+                <label>Check-in date</label>
+                <input type="date" placeholder="Check-in date">
+            </div>
+            <div class="from-control">
+                <label>Check-out date</label>
+                <input type="date" placeholder="Check-out date">
+            </div>
+            <div class="from-control">
+                <label>Gender?</label>
+                <select>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+            </div>
+            <div class="country">
+                <label>Your country?</label>
+                <select>
+                  <option>Egypt</option>
+                  <option>Iraq</option>
+                  <option>Lebanon</option>
+                  <option>USA</option>
+                  <option>France</option>
+                </select>
+            </div>
+            <a class="Done">Done</a>
+        </form>
+        </div>
+        <div class="head">
+          <h3>BASIC</h3>
+          <span>20</span>
+        </div>
+        <div class="head1">
+          <h3>Premium</h3>
+          <span>40</span>
+        </div>
+        <div class="head2">
+          <h3>FOUR STARS</h3>
+          <span>60</span>
+        </div>
+        <div class="head3">
+          <h3>FIVE STARS</h3>
+          <span>100</span>
+        </div>
+        </div>
+        <!-- Start Book Now  -->
+        <div class="plan">
+          <div class="head">
+            <h3>four stars</h3>
+            <span>60</span>
+          </div>
+          <ul>
+            <li>Feature No 1</li>
+            <li>Extra Feature</li>
+            <li>Extra Feature No 2</li>
+            <li>Feature</li>
+          </ul>
+          <div id="main" class="foot">
+            <a onclick="openNav()">Book now</a>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="head">
+            <h3>Five stars</h3>
+            <span>100</span>
+          </div>
+          <ul>
+            <li>Feature No 1</li>
+            <li>Extra Feature</li>
+            <li>Extra Feature No 2</li>
+            <li>Feature</li>
+          </ul>
+          <div id="main" class="foot">
+            <a onclick="openNav()">Book now</a>
+          </div>
+        </div>
+      </div>
+      <p class="contact-text">Contact us if you have special request</p>
+      <a class="contact-link">Contact Us</a>
+    </div>
+  </div>
+  <!-- End Pricing -->
+  <!-- Start Contact -->
+  <div class="contact" id="Contact">
+    <div class="overlay"></div>
+    <h2 class="h2">Contact Us</h2>
+    <div class="container">
+        <!-- Start Contact Us  -->
+        <div class="content">
+          <form action="">
+            <input class="main-input" type="text" name="name" placeholder="Your Name" />
+            <input class="main-input" type="email" name="mail" placeholder="Your Email" />
+            <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+          <div class="info">
+            <h4>Get In Touch</h4>
+            <span class="phone">+20 109.531.7807</span>
+            <span class="phone">+20 109.531.7807</span>
+            <h4>Where We Are</h4>
+            <address>Pyramid<br/>Street No<br/>32</address>
+          </div>
+        </div>
+        <!-- End Contact Us  -->
+        <p>We Are Social</p>
+        <div class="social">
+          <a href="#" class="facebook"> 
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="pinterest">
+            <i class="fa-brands fa-pinterest"></i> 
+          </a>
+          <a href="#" class="twitter">
+            <i  class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          </div>
+        </div>
+    </div>
+  <!-- End Contact -->
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="logo">
+        <h2>PinKo</h2>
+      </div>
+      <p class="copyright">&copy; 2021 <span>Pinko</span> All Right Reserved</p>
+    </div>
+  </div>
+  <!-- Start Footer -->
+  <script src="./main.js"></script>
+</body>
+</html>
